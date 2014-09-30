@@ -1,0 +1,35 @@
+{
+  "name": "divado",
+  "version": "0.0.1",
+  "description": "List your GitHub merged branches",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianv/divado.git"
+  },
+  "keywords": [
+    "GitHub",
+    "merged",
+    "branches"
+  ],
+  "author": "Christian Vuerings <vueringschristian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianv/divado/issues"
+  },
+  "homepage": "https://github.com/christianv/divado",
+  "dependencies": {
+    "express": "^4.9.5",
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.5.2",
+    "gulp-imagemin": "^1.0.1",
+    "gulp-inject": "^1.0.2",
+    "gulp-uglify": "^1.0.1",
+    "imagemin-pngcrush": "^1.0.0"
+  }
+}
