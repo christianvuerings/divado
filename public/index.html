@@ -14,8 +14,16 @@
   <body class="dv-container" ng-controller="DivadoController">
     <form class="dv-text-center">
       <label class="dv-visuallyhidden" for="dv-username">GitHub Username</label>
-      <input placeholder="GitHub Username" id="dv-username" type="text" />
+      <input placeholder="GitHub Username" id="dv-username" type="text" ng-model='username' />
     </form>
+
+    <section>
+      <ul>
+        <li ng-repeat="repo in repos">
+          {{repo.name}}
+        </li>
+      </ul>
+    </section>
     <!-- inject:js -->
     <script src="public/js/app.js"></script>
     <!-- endinject -->
