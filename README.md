@@ -9,6 +9,21 @@ List your GitHub merged branches.
 
 ```shell
 npm install
+gulp
+```
+
+### Heroku
+
+#### Add Heroku
+
+```
+heroku git:remote -a divado
+```
+
+#### Push to Heroku
+
+```
+git push heroku master
 ```
 
 ## Conversation with GitHub
