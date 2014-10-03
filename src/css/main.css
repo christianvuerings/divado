@@ -1,0 +1,70 @@
+/* Fonts */
+@font-face {
+    font-family: 'fengardo_neueblack';
+    src: url('../fonts/fengardoneue_black-webfont.eot');
+    src: url('../fonts/fengardoneue_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fengardoneue_black-webfont.woff2') format('woff2'),
+         url('../fonts/fengardoneue_black-webfont.woff') format('woff'),
+         url('../fonts/fengardoneue_black-webfont.ttf') format('truetype'),
+         url('../fonts/fengardoneue_black-webfont.svg#fengardo_neueblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fengardo_neueregular';
+    src: url('../fonts/fengardoneue_regular-webfont.eot');
+    src: url('../fonts/fengardoneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/fengardoneue_regular-webfont.woff') format('woff'),
+         url('../fonts/fengardoneue_regular-webfont.ttf') format('truetype'),
+         url('../fonts/fengardoneue_regular-webfont.svg#fengardo_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: #333;
+  font-family: fengardo_neueregular, Helvetica, serif;
+}
+label {
+  cursor: pointer;
+}
+input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.50s ease-out;
+}
+input[type="text"]:focus {
+  border: 1px solid #ff9922;
+  box-shadow: 0 0 5px #ff9922;
+  outline: none;
+}
+
+.dv-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.dv-text-center {
+  text-align: center;
+}
+
+.dv-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+}

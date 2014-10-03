@@ -1,6 +1,9 @@
-# Divado
+# [Divado](http://divado.herokuapp.com)
 
 List your GitHub merged branches.
+
+* Homepage: [http://divado.herokuapp.com](http://divado.herokuapp.com)
+* Source: [https://github.com/christianv/divado](https://github.com/christianv/divado)
 
 ## Install & run
 
