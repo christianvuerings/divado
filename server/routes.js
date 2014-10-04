@@ -4,7 +4,6 @@ module.exports = function(app) {
     var GitHubApi = require('github');
 
     var parseJson = function(json) {
-      console.log(json);
       if (!json) {
         return {};
       } else {
@@ -21,8 +20,13 @@ module.exports = function(app) {
     var github = new GitHubApi({
       version: '3.0.0'
     });
+    github.authenticate({
+      type: 'oauth',
+      key: process.env.GITHUB_CLIENT_ID,
+      secret: process.env.GITHUB_CLIENT_SECRET
+    });
     github.repos.getFromUser({
-      per_page: 100,
+      per_page: 10,
       type: 'owner',
       user: req.params.username
     }, function(err, res2) {

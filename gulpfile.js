@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
+var shell = require('gulp-shell');
 
 var paths = {
   src: {
@@ -23,19 +24,19 @@ gulp.task('nodemon', function(cb) {
     script: 'server.js',
     watch: ['server.js', 'server/**/*.*']
   })
-    .on('start', function onStart() {
-      if (!called) {
-        cb();
-      }
-      called = true;
-    })
-    .on('restart', function onRestart() {
-      setTimeout(function reload() {
-        browserSync.reload({
-          stream: false
-        });
-      }, 500);
-    });
+  .on('start', function onStart() {
+    if (!called) {
+      cb();
+    }
+    called = true;
+  })
+  .on('restart', function onRestart() {
+    setTimeout(function reload() {
+      browserSync.reload({
+        stream: false
+      });
+    }, 500);
+  });
 });
 
 gulp.task('browser-sync', ['nodemon'], function() {
