@@ -10,10 +10,11 @@
     <!-- inject:css -->
     <!-- endinject -->
   </head>
-  <body class="dv-container" ng-controller="DivadoController">
-    <form class="dv-text-center">
+  <body class="dv-container" ng-controller="DivadoController" ng-view>
+    <form class="dv-text-center" ng-submit="getRepos()">
       <label class="dv-visuallyhidden" for="dv-username">GitHub Username</label>
       <input placeholder="GitHub Username" id="dv-username" type="text" ng-model='username' />
+      <input type="submit" value="Search"></input>
     </form>
 
     <section>
